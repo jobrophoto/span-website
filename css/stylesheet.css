@@ -1,7 +1,9 @@
 /* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;600&display=swap');
 
 /*RESET*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
 
 
 /* Brand variables*/
+
  :root {
     --color-background: #151515;
     --color-charcoal: #1A1A1A;
@@ -17,12 +20,81 @@
     --color-steel: #9c9691;
     --color-rust: #C1531B;
 
-    --footer-header: 'Space Grotesk', sans-serif;
-    --footer-body: 'Inter', sans-serif;
+    --font-header: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
  }
 
  body {
-    font-family: var(--footer-body);
+    font-family: var(--font-body);
     background-color: var(--color-background);
     color: var(--color-offwhite);
  }
+
+ /*Header / Nav*/
+
+ header {
+    padding: 20px 40px;
+ }
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .logo-badge {
+    background-color: var(--color-rust);
+    padding: 8px 14px;
+    border-radius: 4px;
+    display: inline-block;
+ }
+
+ .logo-badge img {
+    height: 20px;
+    display: block;
+ }
+
+ .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+ }
+
+ .nav-links a {
+    color: var(--color-steel);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+ }
+
+ /* Hero */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-family: var(--font-header);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    color: var(--color-steel);
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-rust);
+    color: var(--color-offwhite);
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
