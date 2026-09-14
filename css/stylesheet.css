@@ -1,0 +1,28 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;600&display=swap');
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Brand variables*/
+ :root {
+    --color-background: #151515;
+    --color-charcoal: #1A1A1A;
+    --color-offwhite: #F5F3EF;
+    --color-steel: #9c9691;
+    --color-rust: #C1531B;
+
+    --footer-header: 'Space Grotesk', sans-serif;
+    --footer-body: 'Inter', sans-serif;
+ }
+
+ body {
+    font-family: var(--footer-body);
+    background-color: var(--color-background);
+    color: var(--color-offwhite);
+ }
