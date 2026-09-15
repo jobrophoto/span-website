@@ -45,7 +45,6 @@
  .logo-badge {
     background-color: var(--color-rust);
     padding: 8px 14px;
-    border-radius: 4px;
     display: inline-block;
  }
 
@@ -97,4 +96,11 @@
     border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
+}
+
+.service-icon {
+   width: 60px;
+   height: 60px;
+   display: block;
+   margin-bottom: 16px;
 }
