@@ -134,3 +134,53 @@
    font-family:  var(--font-header);
    font-size: 18px;
 }
+
+.projects {
+   padding: 0 40px 80px;
+}
+
+.projects h2 {
+   font-size: 13px;
+   letter-spacing: 1px;
+   color: var(--color-steel);
+   text-transform: uppercase;
+   margin-bottom: 24px;
+}
+
+.projects-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
+.project-card {
+   display: block;
+   text-decoration: none;
+   border-radius: 8px;
+   overflow: hidden;
+   background-color: #1E1E1E;
+}
+
+.project-card img {
+   width: 100%;
+   height: 240px;
+   object-fit: cover;
+   display: block;
+   filter: grayscale(100%);
+}
+
+.project-info {
+   padding: 16px 20px;
+}
+
+.project-info h3 {
+   font-family: var(--font-header);
+   color: var(--color-offwhite);
+   font-size: 16px;
+   margin-bottom: 4px;
+}
+
+.project-info p {
+   color: var(--color-steel);
+   font-size: 13px;
+}
