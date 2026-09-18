@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;600&display=swap');
 
-/*RESET*/
+/* RESET */
 
 * {
     margin: 0;
@@ -11,7 +11,7 @@
 }
 
 
-/* Brand variables*/
+/* Brand variables */
 
  :root {
     --color-background: #151515;
@@ -30,7 +30,7 @@
     color: var(--color-offwhite);
  }
 
- /*Header / Nav*/
+ /* Header / Nav */
 
  header {
     padding: 20px 40px;
@@ -70,8 +70,33 @@
  /* Hero */
 
 .hero {
-    text-align: center;
-    padding: 120px 20px;
+   position: relative;
+   text-align: center;
+   padding: 160px 20px;
+}
+
+.hero::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-image: url('../assets/images/homepage-hero-image.jpg');
+   background-size: cover;
+   background-position: center;
+   filter: grayscale(100%);
+   z-index: 0;
+}
+
+.hero-overlay {
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(180deg, rgba(21,21,21,0.75), rgba(21,21,21,1));
+   z-index: 0;
+}
+
+
+.hero-content {
+   position: relative;
+   z-index: 1;
 }
 
 .hero h1 {
@@ -98,6 +123,9 @@
     font-weight: 600;
 }
 
+
+/* Services */
+
 .services {
    padding: 80px 40px;
 }
@@ -121,11 +149,12 @@
    border: 1px solid #2a2a2a;
    border-radius: 8px;
    padding: 24px;
+   text-align: center;
 }
 
 .service-icon {
-   width: 60px;
-   height: 60px;
+   width: 32px;
+   height: 32px;
    display: block;
 }
 
@@ -133,6 +162,19 @@
    font-family:  var(--font-header);
    font-size: 18px;
 }
+
+.service-icon-badge {
+   width: 60px;
+   height: 60px;
+   background-color: var(--color-rust);
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto 16px;
+}
+
+/* Featured Projects */
 
 .projects {
    padding: 0 40px 80px;
@@ -184,6 +226,8 @@
    font-size: 13px;
 }
 
+/* Stats */
+
 .stats {
    display: flex;
    justify-content: space-around;
@@ -213,6 +257,8 @@
    margin-top: 4px;
 }
 
+/* Why Us */
+
 .why-us {
    padding: 0 40px 80px;
    max-width: none;
@@ -238,6 +284,7 @@
    object-fit: cover;
    border-radius: 8px;
    display: block;
+   filter: grayscale(100%);
 }
 
 .why-us h2 {
@@ -298,4 +345,44 @@
    font-size: 13px;
    line-height: 1.6;
    padding-top: 10px;
+}
+
+/* Footer */
+
+footer {
+   padding: 40px;
+   border-top: 1px solid #2a2a2a;
+   text-align: center;
+}
+
+.footer-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.footer-logo-svg {
+   height: 24px;
+   width: auto;
+   color: var(--color-steel);
+   display: block;
+}
+
+.footer-nav {
+   display: flex;
+   gap: 20px;
+}
+
+.footer-nav a {
+   color: var(--color-rust);
+   text-decoration: none;
+   font-size: 13px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.footer-copyright {
+   color: var(--color-steel);
+   font-size: 12px;
 }
