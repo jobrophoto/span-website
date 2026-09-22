@@ -468,3 +468,83 @@ footer {
   text-decoration: none;
   font-size: 15px;
 }
+
+/* Project Hero */
+
+.project-hero {
+  position: relative;
+  padding: 120px 40px 60px;
+  overflow: hidden;
+}
+
+.project-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/riverside-bridge.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+.project-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 0.5),
+    rgba(21, 21, 21, 0.95)
+  );
+  z-index: 0;
+}
+
+.project-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.project-tag {
+  display: block;
+  color: var(--color-rust);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.project-hero h1 {
+  font-family: var(--font-header);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* Quick-facts */
+
+.quick-facts {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+  border-bottom: 1px solid #2a2a2a;
+  margin-bottom: 60px;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fact-label {
+  color: var(--color-steel);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.fact-value {
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 15px;
+}
