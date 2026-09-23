@@ -550,6 +550,7 @@ footer {
 }
 
 /* Challenge + Approach */
+
 .challenge-approach {
   display: flex;
   gap: 40px;
@@ -575,4 +576,75 @@ footer {
   font-size: 15px;
   line-height: 1.7;
   color: var(--color-offwhite);
+}
+
+/* Supporting Images */
+
+.supporting-images {
+  padding: 0 40px 60px;
+}
+
+.supporting-images h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--color-steel);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.supporting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.supporting-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  filter: grayscale(100%);
+}
+
+/* Outcome */
+
+.outcome {
+  padding: 0 40px 80px;
+}
+
+.outcome h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--color-steel);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.outcome-stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.outcome-stat {
+  text-align: center;
+}
+
+.outcome-number {
+  font-family: var(--font-header);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-rust);
+}
+
+.outcome-label {
+  color: var(--color-steel);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 4px;
 }
