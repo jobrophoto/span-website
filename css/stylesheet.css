@@ -348,6 +348,10 @@ nav {
   padding-top: 10px;
 }
 
+.why-body-image {
+  display: none;
+}
+
 /* Footer */
 
 footer {
@@ -676,6 +680,30 @@ footer {
   font-size: 16px;
 }
 
+/* Hamburger Menu - Mobile */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 48px;
+  height: 40px;
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-steel);
+}
+
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
@@ -744,5 +772,71 @@ footer {
 
   .why-item.active .why-body {
     max-height: 400px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-charcoal);
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 16px;
+    z-index: 10;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .project-hero {
+    padding: 100px 20px 40px;
+  }
+
+  .project-hero h1 {
+    font-size: 28px;
+  }
+
+  .quick-facts {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 32px;
+  }
+
+  .challenge-approach {
+    flex-direction: column;
+    padding: 0 20px 40px;
+    gap: 32px;
+  }
+
+  .supporting-images {
+    padding: 0 20px 40px;
+  }
+
+  .supporting-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outcome {
+    padding: 0 20px 40px;
+  }
+
+  .outcome-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-nav {
+    padding: 24px 20px;
   }
 }
