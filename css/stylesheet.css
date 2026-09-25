@@ -839,4 +839,14 @@ footer {
   .project-nav {
     padding: 24px 20px;
   }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
