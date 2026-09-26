@@ -110,6 +110,7 @@ nav {
   background-position: center;
   filter: grayscale(100%);
   z-index: 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .hero-overlay {
@@ -121,11 +122,14 @@ nav {
     rgba(21, 21, 21, 1)
   );
   z-index: 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
 }
 
 .hero h1 {
@@ -134,12 +138,18 @@ nav {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
 }
 
 .hero p {
   color: var(--color-steel);
   font-size: 15px;
   margin-bottom: 24px;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
 .btn-primary {
@@ -150,6 +160,23 @@ nav {
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
+}
+
+.hero .btn-primary {
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* Services */
