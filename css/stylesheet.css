@@ -18,6 +18,8 @@
   --color-offwhite: #f5f3ef;
   --color-steel: #9c9691;
   --color-rust: #c1531b;
+  --color-card-background: #1e1e1e;
+  --color-card-border: #2a2a2a;
 
   --font-header: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -227,8 +229,8 @@ nav {
 }
 
 .service-card {
-  background-color: #1e1e1e;
-  border: 1px solid #2a2a2a;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
   padding: 24px;
   text-align: center;
@@ -281,7 +283,7 @@ nav {
   text-decoration: none;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #1e1e1e;
+  background-color: var(--color-card-background);
 }
 
 .project-card img {
@@ -313,8 +315,8 @@ nav {
 .stats {
   display: flex;
   justify-content: space-around;
-  background-color: #1e1e1e;
-  border: 1px solid #2a2a2a;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
   margin: 0 40px 80px;
   padding: 32px 32px;
@@ -544,8 +546,8 @@ footer {
 }
 
 .contact {
-  background-color: #1e1e1e;
-  border: 1px solid #2a2a2a;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
   margin: 0 40px 80px;
   padding: 60px 20px;
@@ -678,14 +680,14 @@ footer {
 .ca-label {
   display: block;
   color: var(--color-rust);
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
 
 .ca-block p {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--color-offwhite);
 }
@@ -736,8 +738,8 @@ footer {
 .outcome-stats {
   display: flex;
   justify-content: space-around;
-  background-color: #1e1e1e;
-  border: 1px solid #2a2a2a;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
   padding: 32px;
 }
