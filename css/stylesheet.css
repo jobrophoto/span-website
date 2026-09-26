@@ -567,6 +567,7 @@ footer {
   background-position: center;
   filter: grayscale(100%);
   z-index: 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .project-hero::after {
@@ -579,11 +580,14 @@ footer {
     rgba(21, 21, 21, 0.95)
   );
   z-index: 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .project-hero-content {
   position: relative;
   z-index: 1;
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
 }
 
 .project-tag {
